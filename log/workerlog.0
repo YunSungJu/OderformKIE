@@ -1,0 +1,304 @@
+/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/setuptools/sandbox.py:13: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+[2023/12/19 01:51:12] ppocr INFO: Architecture : 
+[2023/12/19 01:51:12] ppocr INFO:     Backbone : 
+[2023/12/19 01:51:12] ppocr INFO:         checkpoints : None
+[2023/12/19 01:51:12] ppocr INFO:         mode : vi
+[2023/12/19 01:51:12] ppocr INFO:         name : LayoutXLMForRe
+[2023/12/19 01:51:12] ppocr INFO:         pretrained : True
+[2023/12/19 01:51:12] ppocr INFO:     Transform : None
+[2023/12/19 01:51:12] ppocr INFO:     algorithm : LayoutXLM
+[2023/12/19 01:51:12] ppocr INFO:     model_type : kie
+[2023/12/19 01:51:12] ppocr INFO: Eval : 
+[2023/12/19 01:51:12] ppocr INFO:     dataset : 
+[2023/12/19 01:51:12] ppocr INFO:         data_dir : train_data
+[2023/12/19 01:51:12] ppocr INFO:         label_file_list : ['train_data/validation_Label_no_blank.json']
+[2023/12/19 01:51:12] ppocr INFO:         name : SimpleDataSet
+[2023/12/19 01:51:12] ppocr INFO:         transforms : 
+[2023/12/19 01:51:12] ppocr INFO:             DecodeImage : 
+[2023/12/19 01:51:12] ppocr INFO:                 channel_first : False
+[2023/12/19 01:51:12] ppocr INFO:                 img_mode : RGB
+[2023/12/19 01:51:12] ppocr INFO:             VQATokenLabelEncode : 
+[2023/12/19 01:51:12] ppocr INFO:                 algorithm : LayoutXLM
+[2023/12/19 01:51:12] ppocr INFO:                 class_path : train_data/class_list_xfun.txt
+[2023/12/19 01:51:12] ppocr INFO:                 contains_re : True
+[2023/12/19 01:51:12] ppocr INFO:                 order_method : tb-yx
+[2023/12/19 01:51:12] ppocr INFO:                 use_textline_bbox_info : True
+[2023/12/19 01:51:12] ppocr INFO:             VQATokenPad : 
+[2023/12/19 01:51:12] ppocr INFO:                 max_seq_len : 512
+[2023/12/19 01:51:12] ppocr INFO:                 return_attention_mask : True
+[2023/12/19 01:51:12] ppocr INFO:             VQAReTokenRelation : None
+[2023/12/19 01:51:12] ppocr INFO:             VQAReTokenChunk : 
+[2023/12/19 01:51:12] ppocr INFO:                 max_seq_len : 512
+[2023/12/19 01:51:12] ppocr INFO:             TensorizeEntitiesRelations : None
+[2023/12/19 01:51:12] ppocr INFO:             Resize : 
+[2023/12/19 01:51:12] ppocr INFO:                 size : [224, 224]
+[2023/12/19 01:51:12] ppocr INFO:             NormalizeImage : 
+[2023/12/19 01:51:12] ppocr INFO:                 mean : [123.675, 116.28, 103.53]
+[2023/12/19 01:51:12] ppocr INFO:                 order : hwc
+[2023/12/19 01:51:12] ppocr INFO:                 scale : 1
+[2023/12/19 01:51:12] ppocr INFO:                 std : [58.395, 57.12, 57.375]
+[2023/12/19 01:51:12] ppocr INFO:             ToCHWImage : None
+[2023/12/19 01:51:12] ppocr INFO:             KeepKeys : 
+[2023/12/19 01:51:12] ppocr INFO:                 keep_keys : ['input_ids', 'bbox', 'attention_mask', 'token_type_ids', 'entities', 'relations']
+[2023/12/19 01:51:12] ppocr INFO:     loader : 
+[2023/12/19 01:51:12] ppocr INFO:         batch_size_per_card : 4
+[2023/12/19 01:51:12] ppocr INFO:         drop_last : False
+[2023/12/19 01:51:12] ppocr INFO:         num_workers : 4
+[2023/12/19 01:51:12] ppocr INFO:         shuffle : False
+[2023/12/19 01:51:12] ppocr INFO: Global : 
+[2023/12/19 01:51:12] ppocr INFO:     cal_metric_during_train : False
+[2023/12/19 01:51:12] ppocr INFO:     distributed : True
+[2023/12/19 01:51:12] ppocr INFO:     epoch_num : 5
+[2023/12/19 01:51:12] ppocr INFO:     eval_batch_step : [0, 19]
+[2023/12/19 01:51:12] ppocr INFO:     infer_img : train_data/test/TP1OI220017491_2.jpg
+[2023/12/19 01:51:12] ppocr INFO:     kie_det_model_dir : None
+[2023/12/19 01:51:12] ppocr INFO:     kie_rec_model_dir : None
+[2023/12/19 01:51:12] ppocr INFO:     log_smooth_window : 10
+[2023/12/19 01:51:12] ppocr INFO:     print_batch_step : 10
+[2023/12/19 01:51:12] ppocr INFO:     save_epoch_step : 2
+[2023/12/19 01:51:12] ppocr INFO:     save_inference_dir : None
+[2023/12/19 01:51:12] ppocr INFO:     save_model_dir : ./output/re_vi_layoutxlm_xfund_zh
+[2023/12/19 01:51:12] ppocr INFO:     save_res_path : ./output/re/xfund_zh/with_gt
+[2023/12/19 01:51:12] ppocr INFO:     seed : 2022
+[2023/12/19 01:51:12] ppocr INFO:     use_gpu : True
+[2023/12/19 01:51:12] ppocr INFO:     use_visualdl : False
+[2023/12/19 01:51:12] ppocr INFO: Loss : 
+[2023/12/19 01:51:12] ppocr INFO:     key : loss
+[2023/12/19 01:51:12] ppocr INFO:     name : LossFromOutput
+[2023/12/19 01:51:12] ppocr INFO:     reduction : mean
+[2023/12/19 01:51:12] ppocr INFO: Metric : 
+[2023/12/19 01:51:12] ppocr INFO:     main_indicator : hmean
+[2023/12/19 01:51:12] ppocr INFO:     name : VQAReTokenMetric
+[2023/12/19 01:51:12] ppocr INFO: Optimizer : 
+[2023/12/19 01:51:12] ppocr INFO:     beta1 : 0.9
+[2023/12/19 01:51:12] ppocr INFO:     beta2 : 0.999
+[2023/12/19 01:51:12] ppocr INFO:     clip_norm : 10
+[2023/12/19 01:51:12] ppocr INFO:     lr : 
+[2023/12/19 01:51:12] ppocr INFO:         learning_rate : 5e-05
+[2023/12/19 01:51:12] ppocr INFO:         warmup_epoch : 10
+[2023/12/19 01:51:12] ppocr INFO:     name : AdamW
+[2023/12/19 01:51:12] ppocr INFO:     regularizer : 
+[2023/12/19 01:51:12] ppocr INFO:         factor : 0.0
+[2023/12/19 01:51:12] ppocr INFO:         name : L2
+[2023/12/19 01:51:12] ppocr INFO: PostProcess : 
+[2023/12/19 01:51:12] ppocr INFO:     name : VQAReTokenLayoutLMPostProcess
+[2023/12/19 01:51:12] ppocr INFO: Train : 
+[2023/12/19 01:51:12] ppocr INFO:     dataset : 
+[2023/12/19 01:51:12] ppocr INFO:         data_dir : train_data
+[2023/12/19 01:51:12] ppocr INFO:         label_file_list : ['train_data/training_Label_no_blank.json']
+[2023/12/19 01:51:12] ppocr INFO:         name : SimpleDataSet
+[2023/12/19 01:51:12] ppocr INFO:         ratio_list : [1.0]
+[2023/12/19 01:51:12] ppocr INFO:         transforms : 
+[2023/12/19 01:51:12] ppocr INFO:             DecodeImage : 
+[2023/12/19 01:51:12] ppocr INFO:                 channel_first : False
+[2023/12/19 01:51:12] ppocr INFO:                 img_mode : RGB
+[2023/12/19 01:51:12] ppocr INFO:             VQATokenLabelEncode : 
+[2023/12/19 01:51:12] ppocr INFO:                 algorithm : LayoutXLM
+[2023/12/19 01:51:12] ppocr INFO:                 class_path : train_data/class_list_xfun.txt
+[2023/12/19 01:51:12] ppocr INFO:                 contains_re : True
+[2023/12/19 01:51:12] ppocr INFO:                 order_method : tb-yx
+[2023/12/19 01:51:12] ppocr INFO:                 use_textline_bbox_info : True
+[2023/12/19 01:51:12] ppocr INFO:             VQATokenPad : 
+[2023/12/19 01:51:12] ppocr INFO:                 max_seq_len : 512
+[2023/12/19 01:51:12] ppocr INFO:                 return_attention_mask : True
+[2023/12/19 01:51:12] ppocr INFO:             VQAReTokenRelation : None
+[2023/12/19 01:51:12] ppocr INFO:             VQAReTokenChunk : 
+[2023/12/19 01:51:12] ppocr INFO:                 max_seq_len : 512
+[2023/12/19 01:51:12] ppocr INFO:             TensorizeEntitiesRelations : None
+[2023/12/19 01:51:12] ppocr INFO:             Resize : 
+[2023/12/19 01:51:12] ppocr INFO:                 size : [224, 224]
+[2023/12/19 01:51:12] ppocr INFO:             NormalizeImage : 
+[2023/12/19 01:51:12] ppocr INFO:                 mean : [123.675, 116.28, 103.53]
+[2023/12/19 01:51:12] ppocr INFO:                 order : hwc
+[2023/12/19 01:51:12] ppocr INFO:                 scale : 1
+[2023/12/19 01:51:12] ppocr INFO:                 std : [58.395, 57.12, 57.375]
+[2023/12/19 01:51:12] ppocr INFO:             ToCHWImage : None
+[2023/12/19 01:51:12] ppocr INFO:             KeepKeys : 
+[2023/12/19 01:51:12] ppocr INFO:                 keep_keys : ['input_ids', 'bbox', 'attention_mask', 'token_type_ids', 'entities', 'relations']
+[2023/12/19 01:51:12] ppocr INFO:     loader : 
+[2023/12/19 01:51:12] ppocr INFO:         batch_size_per_card : 4
+[2023/12/19 01:51:12] ppocr INFO:         drop_last : False
+[2023/12/19 01:51:12] ppocr INFO:         num_workers : 4
+[2023/12/19 01:51:12] ppocr INFO:         shuffle : True
+[2023/12/19 01:51:12] ppocr INFO: profiler_options : None
+[2023/12/19 01:51:12] ppocr INFO: train with paddle 2.3.2 and device Place(gpu:0)
+server not ready, wait 3 sec to retry...
+not ready endpoints:['127.0.0.1:41059', '127.0.0.1:51379', '127.0.0.1:51171']
+I1219 01:51:15.340776 3024488 nccl_context.cc:83] init nccl context nranks: 4 local rank: 0 gpu id: 0 ring id: 0
+W1219 01:51:15.846707 3024488 gpu_resources.cc:61] Please NOTE: device: 0, GPU Compute Capability: 8.9, Driver API Version: 12.0, Runtime API Version: 11.6
+W1219 01:51:15.847513 3024488 gpu_resources.cc:91] device: 0, cuDNN Version: 8.9.
+[2023/12/19 01:51:16] ppocr INFO: Initialize indexs of datasets:['train_data/training_Label_no_blank.json']
+list index out of range
+[32m[2023-12-19 01:51:17,305] [    INFO][0m - Already cached /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/sentencepiece.bpe.model[0m
+[32m[2023-12-19 01:51:17,843] [    INFO][0m - tokenizer config file saved in /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/tokenizer_config.json[0m
+[32m[2023-12-19 01:51:17,843] [    INFO][0m - Special tokens file saved in /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/special_tokens_map.json[0m
+[2023/12/19 01:51:17] ppocr INFO: Initialize indexs of datasets:['train_data/validation_Label_no_blank.json']
+[32m[2023-12-19 01:51:17,846] [    INFO][0m - Already cached /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/sentencepiece.bpe.model[0m
+[32m[2023-12-19 01:51:18,379] [    INFO][0m - tokenizer config file saved in /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/tokenizer_config.json[0m
+[32m[2023-12-19 01:51:18,380] [    INFO][0m - Special tokens file saved in /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/special_tokens_map.json[0m
+[32m[2023-12-19 01:51:18,381] [    INFO][0m - Already cached /home/ace_seongju/.paddlenlp/models/vi-layoutxlm-base-uncased/model_state.pdparams[0m
+[2023/12/19 01:51:20] ppocr INFO: train dataloader has 81 iters
+[2023/12/19 01:51:20] ppocr INFO: valid dataloader has 50 iters
+[2023/12/19 01:51:20] ppocr INFO: During the training process, after the 0th iteration, an evaluation is run every 19 iterations
+[2023/12/19 01:52:40] ppocr INFO: epoch: [1/5], global_step: 10, lr: 0.000000, loss: 3.620109, avg_reader_cost: 0.09819 s, avg_batch_cost: 7.95479 s, avg_samples: 4.0, ips: 0.50284 samples/s, eta: 0:52:22
+eval model::   0%|          | 0/50 [00:00<?, ?it/s]eval model::   2%|▏         | 1/50 [00:03<02:56,  3.59s/it]eval model::   4%|▍         | 2/50 [00:04<01:32,  1.92s/it]eval model::   6%|▌         | 3/50 [00:10<03:06,  3.97s/it]eval model::   8%|▊         | 4/50 [00:15<03:24,  4.44s/it]eval model::  10%|█         | 5/50 [00:20<03:28,  4.62s/it]eval model::  12%|█▏        | 6/50 [00:24<03:14,  4.42s/it]eval model::  14%|█▍        | 7/50 [00:27<02:47,  3.89s/it]eval model::  16%|█▌        | 8/50 [00:28<02:04,  2.95s/it]eval model::  18%|█▊        | 9/50 [00:31<01:54,  2.80s/it]eval model::  20%|██        | 10/50 [00:32<01:32,  2.31s/it]eval model::  22%|██▏       | 11/50 [00:36<01:48,  2.77s/it]eval model::  24%|██▍       | 12/50 [00:39<01:57,  3.10s/it]eval model::  26%|██▌       | 13/50 [00:44<02:12,  3.59s/it]eval model::  28%|██▊       | 14/50 [00:48<02:13,  3.70s/it]eval model::  30%|███       | 15/50 [00:51<01:57,  3.35s/it]eval model::  32%|███▏      | 16/50 [00:52<01:34,  2.77s/it]eval model::  34%|███▍      | 17/50 [00:53<01:12,  2.19s/it]eval model::  36%|███▌      | 18/50 [00:57<01:25,  2.68s/it]eval model::  38%|███▊      | 19/50 [01:01<01:38,  3.17s/it]eval model::  40%|████      | 20/50 [01:04<01:36,  3.22s/it]eval model::  42%|████▏     | 21/50 [01:10<01:49,  3.79s/it]eval model::  44%|████▍     | 22/50 [01:10<01:21,  2.92s/it]eval model::  46%|████▌     | 23/50 [01:16<01:41,  3.75s/it]eval model::  48%|████▊     | 24/50 [01:22<01:51,  4.28s/it]eval model::  50%|█████     | 25/50 [01:25<01:36,  3.87s/it]eval model::  52%|█████▏    | 26/50 [01:27<01:25,  3.55s/it]eval model::  54%|█████▍    | 27/50 [01:31<01:22,  3.59s/it]eval model::  56%|█████▌    | 28/50 [01:34<01:13,  3.32s/it]eval model::  58%|█████▊    | 29/50 [01:39<01:22,  3.92s/it]eval model::  60%|██████    | 30/50 [01:44<01:22,  4.13s/it]eval model::  62%|██████▏   | 31/50 [01:46<01:09,  3.66s/it]eval model::  64%|██████▍   | 32/50 [01:53<01:25,  4.73s/it]eval model::  66%|██████▌   | 33/50 [01:59<01:24,  5.00s/it]eval model::  68%|██████▊   | 34/50 [02:02<01:09,  4.34s/it]eval model::  70%|███████   | 35/50 [02:05<00:59,  3.97s/it]eval model::  72%|███████▏  | 36/50 [02:09<00:55,  3.98s/it]eval model::  74%|███████▍  | 37/50 [02:13<00:53,  4.12s/it]eval model::  76%|███████▌  | 38/50 [02:15<00:40,  3.37s/it]eval model::  78%|███████▊  | 39/50 [02:18<00:36,  3.35s/it]eval model::  80%|████████  | 40/50 [02:21<00:31,  3.11s/it]eval model::  82%|████████▏ | 41/50 [02:27<00:36,  4.04s/it]eval model::  84%|████████▍ | 42/50 [02:29<00:26,  3.27s/it]eval model::  86%|████████▌ | 43/50 [02:30<00:19,  2.80s/it]eval model::  88%|████████▊ | 44/50 [02:36<00:21,  3.63s/it]eval model::  90%|█████████ | 45/50 [02:37<00:14,  2.83s/it]eval model::  92%|█████████▏| 46/50 [02:39<00:10,  2.64s/it]eval model::  94%|█████████▍| 47/50 [02:44<00:10,  3.43s/it]eval model::  96%|█████████▌| 48/50 [02:48<00:07,  3.54s/it]eval model::  98%|█████████▊| 49/50 [02:50<00:02,  2.93s/it]eval model:: 100%|██████████| 50/50 [02:52<00:00,  2.63s/it]eval model:: 100%|██████████| 50/50 [02:52<00:00,  3.44s/it]
+[2023/12/19 01:56:33] ppocr INFO: cur metric, precision: 0.03215249127261187, recall: 0.33122190437270127, hmean: 0.058615078647622484, fps: 1.163402515789606
+[2023/12/19 01:56:46] ppocr INFO: save best model is to ./output/re_vi_layoutxlm_xfund_zh/best_accuracy
+[2023/12/19 01:56:46] ppocr INFO: best metric, hmean: 0.058615078647622484, precision: 0.03215249127261187, recall: 0.33122190437270127, fps: 1.163402515789606, best_epoch: 1
+[2023/12/19 01:56:50] ppocr INFO: epoch: [1/5], global_step: 20, lr: 0.000001, loss: 3.079246, avg_reader_cost: 0.00014 s, avg_batch_cost: 6.47094 s, avg_samples: 4.0, ips: 0.61815 samples/s, eta: 0:46:16
+[2023/12/19 01:57:14] ppocr INFO: epoch: [1/5], global_step: 30, lr: 0.000002, loss: 2.004781, avg_reader_cost: 0.00014 s, avg_batch_cost: 2.45964 s, avg_samples: 4.0, ips: 1.62625 samples/s, eta: 0:35:10
+eval model::   0%|          | 0/50 [00:00<?, ?it/s]eval model::   2%|▏         | 1/50 [00:01<00:58,  1.20s/it]eval model::   4%|▍         | 2/50 [00:01<00:30,  1.59it/s]eval model::   6%|▌         | 3/50 [00:02<00:33,  1.41it/s]eval model::   8%|▊         | 4/50 [00:02<00:32,  1.42it/s]eval model::  10%|█         | 5/50 [00:03<00:30,  1.46it/s]eval model::  12%|█▏        | 6/50 [00:04<00:28,  1.54it/s]eval model::  14%|█▍        | 7/50 [00:04<00:25,  1.69it/s]eval model::  16%|█▌        | 8/50 [00:04<00:19,  2.13it/s]eval model::  18%|█▊        | 9/50 [00:05<00:18,  2.17it/s]eval model::  20%|██        | 10/50 [00:05<00:15,  2.52it/s]eval model::  22%|██▏       | 11/50 [00:06<00:18,  2.16it/s]eval model::  24%|██▍       | 12/50 [00:06<00:18,  2.03it/s]eval model::  26%|██▌       | 13/50 [00:07<00:19,  1.87it/s]eval model::  28%|██▊       | 14/50 [00:07<00:19,  1.85it/s]eval model::  30%|███       | 15/50 [00:08<00:18,  1.87it/s]eval model::  32%|███▏      | 16/50 [00:08<00:15,  2.20it/s]eval model::  34%|███▍      | 17/50 [00:08<00:12,  2.56it/s]eval model::  36%|███▌      | 18/50 [00:09<00:13,  2.29it/s]eval model::  38%|███▊      | 19/50 [00:10<00:14,  2.10it/s]eval model::  40%|████      | 20/50 [00:10<00:13,  2.21it/s]eval model::  42%|████▏     | 21/50 [00:11<00:15,  1.88it/s]eval model::  44%|████▍     | 22/50 [00:11<00:12,  2.27it/s]eval model::  46%|████▌     | 23/50 [00:12<00:14,  1.88it/s]eval model::  48%|████▊     | 24/50 [00:12<00:15,  1.69it/s]eval model::  50%|█████     | 25/50 [00:13<00:14,  1.76it/s]eval model::  52%|█████▏    | 26/50 [00:13<00:12,  1.88it/s]eval model::  54%|█████▍    | 27/50 [00:14<00:12,  1.84it/s]eval model::  56%|█████▌    | 28/50 [00:14<00:11,  1.98it/s]eval model::  58%|█████▊    | 29/50 [00:15<00:12,  1.71it/s]eval model::  60%|██████    | 30/50 [00:16<00:11,  1.71it/s]eval model::  62%|██████▏   | 31/50 [00:16<00:10,  1.85it/s]eval model::  64%|██████▍   | 32/50 [00:17<00:11,  1.58it/s]eval model::  66%|██████▌   | 33/50 [00:18<00:11,  1.49it/s]eval model::  68%|██████▊   | 34/50 [00:18<00:09,  1.61it/s]eval model::  70%|███████   | 35/50 [00:19<00:08,  1.70it/s]eval model::  72%|███████▏  | 36/50 [00:19<00:08,  1.70it/s]eval model::  74%|███████▍  | 37/50 [00:20<00:07,  1.65it/s]eval model::  76%|███████▌  | 38/50 [00:20<00:06,  1.96it/s]eval model::  78%|███████▊  | 39/50 [00:21<00:05,  1.97it/s]eval model::  80%|████████  | 40/50 [00:21<00:04,  2.11it/s]eval model::  82%|████████▏ | 41/50 [00:22<00:05,  1.79it/s]eval model::  84%|████████▍ | 42/50 [00:22<00:03,  2.09it/s]eval model::  86%|████████▌ | 43/50 [00:23<00:03,  2.19it/s]eval model::  88%|████████▊ | 44/50 [00:23<00:03,  1.86it/s]eval model::  90%|█████████ | 45/50 [00:24<00:02,  2.26it/s]eval model::  92%|█████████▏| 46/50 [00:24<00:01,  2.36it/s]eval model::  94%|█████████▍| 47/50 [00:25<00:01,  2.04it/s]eval model::  96%|█████████▌| 48/50 [00:25<00:01,  1.92it/s]eval model::  98%|█████████▊| 49/50 [00:26<00:00,  2.10it/s]eval model:: 100%|██████████| 50/50 [00:26<00:00,  2.43it/s]eval model:: 100%|██████████| 50/50 [00:26<00:00,  1.89it/s]
+[2023/12/19 01:57:50] ppocr INFO: cur metric, precision: 0, recall: 0, hmean: 0, fps: 8.213577089162788
+[2023/12/19 01:57:50] ppocr INFO: best metric, hmean: 0.058615078647622484, precision: 0.03215249127261187, recall: 0.33122190437270127, fps: 1.163402515789606, best_epoch: 1
+[2023/12/19 01:57:51] ppocr INFO: epoch: [1/5], global_step: 40, lr: 0.000002, loss: 1.349647, avg_reader_cost: 0.00014 s, avg_batch_cost: 1.03061 s, avg_samples: 4.0, ips: 3.88119 samples/s, eta: 0:27:14
+[2023/12/19 01:58:02] ppocr INFO: epoch: [1/5], global_step: 50, lr: 0.000003, loss: 0.808641, avg_reader_cost: 0.00012 s, avg_batch_cost: 1.01497 s, avg_samples: 4.0, ips: 3.94100 samples/s, eta: 0:22:24
+/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/setuptools/sandbox.py:13: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+[2023/12/19 02:43:13] ppocr INFO: Architecture : 
+[2023/12/19 02:43:13] ppocr INFO:     Backbone : 
+[2023/12/19 02:43:13] ppocr INFO:         checkpoints : None
+[2023/12/19 02:43:13] ppocr INFO:         mode : vi
+[2023/12/19 02:43:13] ppocr INFO:         name : LayoutXLMForRe
+[2023/12/19 02:43:13] ppocr INFO:         pretrained : True
+[2023/12/19 02:43:13] ppocr INFO:     Transform : None
+[2023/12/19 02:43:13] ppocr INFO:     algorithm : LayoutXLM
+[2023/12/19 02:43:13] ppocr INFO:     model_type : kie
+[2023/12/19 02:43:13] ppocr INFO: Eval : 
+[2023/12/19 02:43:13] ppocr INFO:     dataset : 
+[2023/12/19 02:43:13] ppocr INFO:         data_dir : train_data
+[2023/12/19 02:43:13] ppocr INFO:         label_file_list : ['train_data/validation_Label_no_blank.json']
+[2023/12/19 02:43:13] ppocr INFO:         name : SimpleDataSet
+[2023/12/19 02:43:13] ppocr INFO:         transforms : 
+[2023/12/19 02:43:13] ppocr INFO:             DecodeImage : 
+[2023/12/19 02:43:13] ppocr INFO:                 channel_first : False
+[2023/12/19 02:43:13] ppocr INFO:                 img_mode : RGB
+[2023/12/19 02:43:13] ppocr INFO:             VQATokenLabelEncode : 
+[2023/12/19 02:43:13] ppocr INFO:                 algorithm : LayoutXLM
+[2023/12/19 02:43:13] ppocr INFO:                 class_path : train_data/class_list_xfun.txt
+[2023/12/19 02:43:13] ppocr INFO:                 contains_re : True
+[2023/12/19 02:43:13] ppocr INFO:                 order_method : tb-yx
+[2023/12/19 02:43:13] ppocr INFO:                 use_textline_bbox_info : True
+[2023/12/19 02:43:13] ppocr INFO:             VQATokenPad : 
+[2023/12/19 02:43:13] ppocr INFO:                 max_seq_len : 512
+[2023/12/19 02:43:13] ppocr INFO:                 return_attention_mask : True
+[2023/12/19 02:43:13] ppocr INFO:             VQAReTokenRelation : None
+[2023/12/19 02:43:13] ppocr INFO:             VQAReTokenChunk : 
+[2023/12/19 02:43:13] ppocr INFO:                 max_seq_len : 512
+[2023/12/19 02:43:13] ppocr INFO:             TensorizeEntitiesRelations : None
+[2023/12/19 02:43:13] ppocr INFO:             Resize : 
+[2023/12/19 02:43:13] ppocr INFO:                 size : [224, 224]
+[2023/12/19 02:43:13] ppocr INFO:             NormalizeImage : 
+[2023/12/19 02:43:13] ppocr INFO:                 mean : [123.675, 116.28, 103.53]
+[2023/12/19 02:43:13] ppocr INFO:                 order : hwc
+[2023/12/19 02:43:13] ppocr INFO:                 scale : 1
+[2023/12/19 02:43:13] ppocr INFO:                 std : [58.395, 57.12, 57.375]
+[2023/12/19 02:43:13] ppocr INFO:             ToCHWImage : None
+[2023/12/19 02:43:13] ppocr INFO:             KeepKeys : 
+[2023/12/19 02:43:13] ppocr INFO:                 keep_keys : ['input_ids', 'bbox', 'attention_mask', 'token_type_ids', 'entities', 'relations']
+[2023/12/19 02:43:13] ppocr INFO:     loader : 
+[2023/12/19 02:43:13] ppocr INFO:         batch_size_per_card : 4
+[2023/12/19 02:43:13] ppocr INFO:         drop_last : False
+[2023/12/19 02:43:13] ppocr INFO:         num_workers : 4
+[2023/12/19 02:43:13] ppocr INFO:         shuffle : False
+[2023/12/19 02:43:13] ppocr INFO: Global : 
+[2023/12/19 02:43:13] ppocr INFO:     cal_metric_during_train : False
+[2023/12/19 02:43:13] ppocr INFO:     distributed : True
+[2023/12/19 02:43:13] ppocr INFO:     epoch_num : 5
+[2023/12/19 02:43:13] ppocr INFO:     eval_batch_step : [0, 19]
+[2023/12/19 02:43:13] ppocr INFO:     infer_img : train_data/test/TP1OI220017491_2.jpg
+[2023/12/19 02:43:13] ppocr INFO:     kie_det_model_dir : None
+[2023/12/19 02:43:13] ppocr INFO:     kie_rec_model_dir : None
+[2023/12/19 02:43:13] ppocr INFO:     log_smooth_window : 10
+[2023/12/19 02:43:13] ppocr INFO:     print_batch_step : 10
+[2023/12/19 02:43:13] ppocr INFO:     save_epoch_step : 2
+[2023/12/19 02:43:13] ppocr INFO:     save_inference_dir : None
+[2023/12/19 02:43:13] ppocr INFO:     save_model_dir : ./output/re_vi_layoutxlm_xfund_zh
+[2023/12/19 02:43:13] ppocr INFO:     save_res_path : ./output/re/xfund_zh/with_gt
+[2023/12/19 02:43:13] ppocr INFO:     seed : 2022
+[2023/12/19 02:43:13] ppocr INFO:     use_gpu : True
+[2023/12/19 02:43:13] ppocr INFO:     use_visualdl : False
+[2023/12/19 02:43:13] ppocr INFO: Loss : 
+[2023/12/19 02:43:13] ppocr INFO:     key : loss
+[2023/12/19 02:43:13] ppocr INFO:     name : LossFromOutput
+[2023/12/19 02:43:13] ppocr INFO:     reduction : mean
+[2023/12/19 02:43:13] ppocr INFO: Metric : 
+[2023/12/19 02:43:13] ppocr INFO:     main_indicator : hmean
+[2023/12/19 02:43:13] ppocr INFO:     name : VQAReTokenMetric
+[2023/12/19 02:43:13] ppocr INFO: Optimizer : 
+[2023/12/19 02:43:13] ppocr INFO:     beta1 : 0.9
+[2023/12/19 02:43:13] ppocr INFO:     beta2 : 0.999
+[2023/12/19 02:43:13] ppocr INFO:     clip_norm : 10
+[2023/12/19 02:43:13] ppocr INFO:     lr : 
+[2023/12/19 02:43:13] ppocr INFO:         learning_rate : 5e-05
+[2023/12/19 02:43:13] ppocr INFO:         warmup_epoch : 10
+[2023/12/19 02:43:13] ppocr INFO:     name : AdamW
+[2023/12/19 02:43:13] ppocr INFO:     regularizer : 
+[2023/12/19 02:43:13] ppocr INFO:         factor : 0.0
+[2023/12/19 02:43:13] ppocr INFO:         name : L2
+[2023/12/19 02:43:13] ppocr INFO: PostProcess : 
+[2023/12/19 02:43:13] ppocr INFO:     name : VQAReTokenLayoutLMPostProcess
+[2023/12/19 02:43:13] ppocr INFO: Train : 
+[2023/12/19 02:43:13] ppocr INFO:     dataset : 
+[2023/12/19 02:43:13] ppocr INFO:         data_dir : train_data
+[2023/12/19 02:43:13] ppocr INFO:         label_file_list : ['train_data/training_Label_no_blank.json']
+[2023/12/19 02:43:13] ppocr INFO:         name : SimpleDataSet
+[2023/12/19 02:43:13] ppocr INFO:         ratio_list : [1.0]
+[2023/12/19 02:43:13] ppocr INFO:         transforms : 
+[2023/12/19 02:43:13] ppocr INFO:             DecodeImage : 
+[2023/12/19 02:43:13] ppocr INFO:                 channel_first : False
+[2023/12/19 02:43:13] ppocr INFO:                 img_mode : RGB
+[2023/12/19 02:43:13] ppocr INFO:             VQATokenLabelEncode : 
+[2023/12/19 02:43:13] ppocr INFO:                 algorithm : LayoutXLM
+[2023/12/19 02:43:13] ppocr INFO:                 class_path : train_data/class_list_xfun.txt
+[2023/12/19 02:43:13] ppocr INFO:                 contains_re : True
+[2023/12/19 02:43:13] ppocr INFO:                 order_method : tb-yx
+[2023/12/19 02:43:13] ppocr INFO:                 use_textline_bbox_info : True
+[2023/12/19 02:43:13] ppocr INFO:             VQATokenPad : 
+[2023/12/19 02:43:13] ppocr INFO:                 max_seq_len : 512
+[2023/12/19 02:43:13] ppocr INFO:                 return_attention_mask : True
+[2023/12/19 02:43:13] ppocr INFO:             VQAReTokenRelation : None
+[2023/12/19 02:43:13] ppocr INFO:             VQAReTokenChunk : 
+[2023/12/19 02:43:13] ppocr INFO:                 max_seq_len : 512
+[2023/12/19 02:43:13] ppocr INFO:             TensorizeEntitiesRelations : None
+[2023/12/19 02:43:13] ppocr INFO:             Resize : 
+[2023/12/19 02:43:13] ppocr INFO:                 size : [224, 224]
+[2023/12/19 02:43:13] ppocr INFO:             NormalizeImage : 
+[2023/12/19 02:43:13] ppocr INFO:                 mean : [123.675, 116.28, 103.53]
+[2023/12/19 02:43:13] ppocr INFO:                 order : hwc
+[2023/12/19 02:43:13] ppocr INFO:                 scale : 1
+[2023/12/19 02:43:13] ppocr INFO:                 std : [58.395, 57.12, 57.375]
+[2023/12/19 02:43:13] ppocr INFO:             ToCHWImage : None
+[2023/12/19 02:43:13] ppocr INFO:             KeepKeys : 
+[2023/12/19 02:43:13] ppocr INFO:                 keep_keys : ['input_ids', 'bbox', 'attention_mask', 'token_type_ids', 'entities', 'relations']
+[2023/12/19 02:43:13] ppocr INFO:     loader : 
+[2023/12/19 02:43:13] ppocr INFO:         batch_size_per_card : 4
+[2023/12/19 02:43:13] ppocr INFO:         drop_last : False
+[2023/12/19 02:43:13] ppocr INFO:         num_workers : 4
+[2023/12/19 02:43:13] ppocr INFO:         shuffle : True
+[2023/12/19 02:43:13] ppocr INFO: profiler_options : None
+[2023/12/19 02:43:13] ppocr INFO: train with paddle 2.3.2 and device Place(gpu:0)
+server not ready, wait 3 sec to retry...
+not ready endpoints:['127.0.0.1:58581']
+I1219 02:43:16.141425 3048002 nccl_context.cc:83] init nccl context nranks: 4 local rank: 0 gpu id: 0 ring id: 0
+W1219 02:43:16.675701 3048002 gpu_resources.cc:61] Please NOTE: device: 0, GPU Compute Capability: 8.9, Driver API Version: 12.0, Runtime API Version: 11.6
+W1219 02:43:16.676491 3048002 gpu_resources.cc:91] device: 0, cuDNN Version: 8.9.
+[2023/12/19 02:43:17] ppocr INFO: Initialize indexs of datasets:['train_data/training_Label_no_blank.json']
+list index out of range
+[32m[2023-12-19 02:43:18,106] [    INFO][0m - Already cached /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/sentencepiece.bpe.model[0m
+[32m[2023-12-19 02:43:18,650] [    INFO][0m - tokenizer config file saved in /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/tokenizer_config.json[0m
+[32m[2023-12-19 02:43:18,651] [    INFO][0m - Special tokens file saved in /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/special_tokens_map.json[0m
+[2023/12/19 02:43:18] ppocr INFO: Initialize indexs of datasets:['train_data/validation_Label_no_blank.json']
+[32m[2023-12-19 02:43:18,659] [    INFO][0m - Already cached /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/sentencepiece.bpe.model[0m
+[32m[2023-12-19 02:43:19,204] [    INFO][0m - tokenizer config file saved in /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/tokenizer_config.json[0m
+[32m[2023-12-19 02:43:19,204] [    INFO][0m - Special tokens file saved in /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/special_tokens_map.json[0m
+[32m[2023-12-19 02:43:19,205] [    INFO][0m - Already cached /home/ace_seongju/.paddlenlp/models/vi-layoutxlm-base-uncased/model_state.pdparams[0m
+[2023/12/19 02:43:21] ppocr INFO: train dataloader has 81 iters
+[2023/12/19 02:43:21] ppocr INFO: valid dataloader has 50 iters
+[2023/12/19 02:43:21] ppocr INFO: During the training process, after the 0th iteration, an evaluation is run every 19 iterations

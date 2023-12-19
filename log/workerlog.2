@@ -1,0 +1,77 @@
+/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/setuptools/sandbox.py:13: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+I1219 01:51:12.412370 3024498 gen_comm_id_helper.cc:205] Server listening on: 127.0.0.1:51379 successful.
+I1219 01:51:15.340775 3024498 nccl_context.cc:83] init nccl context nranks: 4 local rank: 2 gpu id: 2 ring id: 0
+W1219 01:51:15.846715 3024498 gpu_resources.cc:61] Please NOTE: device: 2, GPU Compute Capability: 8.9, Driver API Version: 12.0, Runtime API Version: 11.6
+W1219 01:51:15.847481 3024498 gpu_resources.cc:91] device: 2, cuDNN Version: 8.9.
+list index out of range
+[32m[2023-12-19 01:51:17,307] [    INFO][0m - Already cached /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/sentencepiece.bpe.model[0m
+[32m[2023-12-19 01:51:17,842] [    INFO][0m - tokenizer config file saved in /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/tokenizer_config.json[0m
+[32m[2023-12-19 01:51:17,842] [    INFO][0m - Special tokens file saved in /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/special_tokens_map.json[0m
+[32m[2023-12-19 01:51:17,845] [    INFO][0m - Already cached /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/sentencepiece.bpe.model[0m
+[32m[2023-12-19 01:51:18,378] [    INFO][0m - tokenizer config file saved in /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/tokenizer_config.json[0m
+[32m[2023-12-19 01:51:18,378] [    INFO][0m - Special tokens file saved in /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/special_tokens_map.json[0m
+[32m[2023-12-19 01:51:18,379] [    INFO][0m - Already cached /home/ace_seongju/.paddlenlp/models/vi-layoutxlm-base-uncased/model_state.pdparams[0m
+Traceback (most recent call last):
+  File "/home/ace_seongju/XAI/PaddleOCR/tools/train.py", line 227, in <module>
+    main(config, device, logger, vdl_writer)
+  File "/home/ace_seongju/XAI/PaddleOCR/tools/train.py", line 198, in main
+    program.train(config, train_dataloader, valid_dataloader, device, model,
+  File "/home/ace_seongju/XAI/PaddleOCR/tools/program.py", line 303, in train
+    preds = model(batch)
+  File "/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/paddle/fluid/dygraph/layers.py", line 930, in __call__
+    return self._dygraph_call_func(*inputs, **kwargs)
+  File "/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/paddle/fluid/dygraph/layers.py", line 915, in _dygraph_call_func
+    outputs = self.forward(*inputs, **kwargs)
+  File "/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/paddle/fluid/dygraph/parallel.py", line 752, in forward
+    outputs = self._layers(*inputs, **kwargs)
+  File "/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/paddle/fluid/dygraph/layers.py", line 930, in __call__
+    return self._dygraph_call_func(*inputs, **kwargs)
+  File "/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/paddle/fluid/dygraph/layers.py", line 915, in _dygraph_call_func
+    outputs = self.forward(*inputs, **kwargs)
+  File "/home/ace_seongju/XAI/PaddleOCR/ppocr/modeling/architectures/base_model.py", line 86, in forward
+    x = self.backbone(x)
+  File "/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/paddle/fluid/dygraph/layers.py", line 930, in __call__
+    return self._dygraph_call_func(*inputs, **kwargs)
+  File "/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/paddle/fluid/dygraph/layers.py", line 915, in _dygraph_call_func
+    outputs = self.forward(*inputs, **kwargs)
+  File "/home/ace_seongju/XAI/PaddleOCR/ppocr/modeling/backbones/vqa_layoutlm.py", line 227, in forward
+    x = self.model(
+  File "/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/paddle/fluid/dygraph/layers.py", line 930, in __call__
+    return self._dygraph_call_func(*inputs, **kwargs)
+  File "/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/paddle/fluid/dygraph/layers.py", line 915, in _dygraph_call_func
+    outputs = self.forward(*inputs, **kwargs)
+  File "/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/paddlenlp/transformers/layoutxlm/modeling.py", line 1412, in forward
+    loss, pred_relations = self.extractor(sequence_output, entities, relations)
+  File "/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/paddle/fluid/dygraph/layers.py", line 930, in __call__
+    return self._dygraph_call_func(*inputs, **kwargs)
+  File "/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/paddle/fluid/dygraph/layers.py", line 915, in _dygraph_call_func
+    outputs = self.forward(*inputs, **kwargs)
+  File "/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/paddlenlp/transformers/layoutxlm/modeling.py", line 1304, in forward
+    relations, entities = self.build_relation(relations, entities)
+  File "/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/paddlenlp/transformers/layoutxlm/modeling.py", line 1241, in build_relation
+    entities[b] = entitie_new
+  File "/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/paddle/fluid/dygraph/varbase_patch_methods.py", line 786, in __setitem__
+    return self.__setitem_varbase__(item, value)
+ValueError: (InvalidArgument) The shape of tensor assigned value must match the shape of target shape: [512, 3], but now shape is [513, 3]. (at /paddle/paddle/phi/kernels/impl/set_value_kernel_impl.h:69)
+  [operator < set_value > error]
+/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/setuptools/sandbox.py:13: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/home/anaconda3/envs/ace_seongju/lib/python3.9/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+I1219 02:43:13.155619 3048012 gen_comm_id_helper.cc:205] Server listening on: 127.0.0.1:58581 successful.
+I1219 02:43:16.141566 3048012 nccl_context.cc:83] init nccl context nranks: 4 local rank: 2 gpu id: 2 ring id: 0
+W1219 02:43:16.675701 3048012 gpu_resources.cc:61] Please NOTE: device: 2, GPU Compute Capability: 8.9, Driver API Version: 12.0, Runtime API Version: 11.6
+W1219 02:43:16.676487 3048012 gpu_resources.cc:91] device: 2, cuDNN Version: 8.9.
+list index out of range
+[32m[2023-12-19 02:43:18,104] [    INFO][0m - Already cached /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/sentencepiece.bpe.model[0m
+[32m[2023-12-19 02:43:18,642] [    INFO][0m - tokenizer config file saved in /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/tokenizer_config.json[0m
+[32m[2023-12-19 02:43:18,642] [    INFO][0m - Special tokens file saved in /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/special_tokens_map.json[0m
+[32m[2023-12-19 02:43:18,645] [    INFO][0m - Already cached /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/sentencepiece.bpe.model[0m
+[32m[2023-12-19 02:43:19,177] [    INFO][0m - tokenizer config file saved in /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/tokenizer_config.json[0m
+[32m[2023-12-19 02:43:19,178] [    INFO][0m - Special tokens file saved in /home/ace_seongju/.paddlenlp/models/layoutxlm-base-uncased/special_tokens_map.json[0m
+[32m[2023-12-19 02:43:19,179] [    INFO][0m - Already cached /home/ace_seongju/.paddlenlp/models/vi-layoutxlm-base-uncased/model_state.pdparams[0m
