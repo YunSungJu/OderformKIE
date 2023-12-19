@@ -1,4 +1,3 @@
-![image](https://github.com/YunSungJu/OderformKIE/assets/48467841/68dd342d-bfcf-48d0-9587-6438006f2658)# OderformKIE
 물류 주문서 자동 인식기 개발 및 XAI 적용
 
 ### Main ipynb files
@@ -29,4 +28,5 @@ rec model (Text Recognition)
 https://drive.google.com/file/d/1VlTxgMTbV2aU4bFvbIzXTOmxr0tWihFX/view?usp=drive_link
 
 https://github.com/YunSungJu/OderformKIE
-![image](https://github.com/YunSungJu/OderformKIE/assets/48467841/5363c305-93dc-4ed2-860f-aa98b3565118)
+
+![image](https://github.com/YunSungJu/OderformKIE/assets/48467841/931295c6-0e0d-4862-b435-16ff64d503b3)
