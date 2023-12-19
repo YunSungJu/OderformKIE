@@ -27,4 +27,4 @@ https://drive.google.com/file/d/1OgKa0EYQw7b0YKqLoCsUq-g6BLV7Spi-/view?usp=drive
 rec model (Text Recognition)
 https://drive.google.com/file/d/1VlTxgMTbV2aU4bFvbIzXTOmxr0tWihFX/view?usp=drive_link
 
-![image](https://github.com/YunSungJu/OderformKIE/assets/48467841/777e0b5c-c703-4687-a350-a8fffde4783c)
+![제목 없는 디자인](https://github.com/YunSungJu/OderformKIE/assets/48467841/f4c32a36-3a84-4e7e-995e-7fba7116fa9a)
